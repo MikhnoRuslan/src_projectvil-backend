@@ -1,0 +1,14 @@
+using Projectvil.Shared.EntityFramework.Helpers;
+using Projectvil.Shared.EntityFramework.Interfaces;
+
+namespace Projectiv.{ServiceName}Service.Host;
+
+public static class Dependencies
+{
+    public static void AddDependencies(this IServiceCollection services)
+    {
+		services.AddHttpContextAccessor();
+		services.AddScoped<ICurrentUserHelper, CurrentUserHelper>();
+        services.AddTransient<IEntityTimestampUpdater, EntityTimestampUpdater>();
+    }
+}

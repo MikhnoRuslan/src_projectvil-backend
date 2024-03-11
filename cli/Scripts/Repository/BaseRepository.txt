@@ -1,0 +1,15 @@
+using Projectiv.{ServiceName}Service.EntityFrameworkCore.Context;
+using Projectiv.{ServiceName}Service.EntityFrameworkCore.Repositories.Interfaces.BaseRepository;
+using Projectvil.Shared.EntityFramework.Interfaces;
+using Projectvil.Shared.EntityFramework.Repositories;
+
+namespace Projectiv.{ServiceName}Service.EntityFrameworkCore.Repositories.BaseRepository;
+
+public class {ServiceName}BaseRepository<TEntity> : BaseRepository<TEntity, {ServiceName}DbContext>, I{ServiceName}BaseRepository<TEntity>
+    where TEntity : class, IEntity<Guid>
+{
+    public {ServiceName}BaseRepository({ServiceName}DbContext context) 
+        : base(context)
+    {
+    }
+}

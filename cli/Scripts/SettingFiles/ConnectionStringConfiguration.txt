@@ -1,0 +1,6 @@
+namespace Projectiv.{ServiceName}Service.DomainShared.Configuration.PetProjectConfiguration;
+
+public class {ServiceName}ConnectionStringConfiguration
+{
+    public string {ServiceName} { get; set; }
+}

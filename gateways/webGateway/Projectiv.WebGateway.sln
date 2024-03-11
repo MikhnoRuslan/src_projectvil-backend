@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E5FF9B51-99AA-48A9-90D2-55286F2C2EF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.WebGateway.Host", "src\Projectiv.WebGateway.Host\Projectiv.WebGateway.Host.csproj", "{9BBF56E6-8A90-469D-A0B6-1EF1F3046462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.WebGateway.ApplicationShared", "src\Projectiv.WebGateway.ApplicationShared\Projectiv.WebGateway.ApplicationShared.csproj", "{5646D91C-6C69-46A8-AF12-78AA07611397}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BBF56E6-8A90-469D-A0B6-1EF1F3046462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBF56E6-8A90-469D-A0B6-1EF1F3046462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBF56E6-8A90-469D-A0B6-1EF1F3046462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBF56E6-8A90-469D-A0B6-1EF1F3046462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5646D91C-6C69-46A8-AF12-78AA07611397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5646D91C-6C69-46A8-AF12-78AA07611397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5646D91C-6C69-46A8-AF12-78AA07611397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5646D91C-6C69-46A8-AF12-78AA07611397}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BBF56E6-8A90-469D-A0B6-1EF1F3046462} = {E5FF9B51-99AA-48A9-90D2-55286F2C2EF3}
+		{5646D91C-6C69-46A8-AF12-78AA07611397} = {E5FF9B51-99AA-48A9-90D2-55286F2C2EF3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,92 @@
+syntax = "proto3";
+
+option csharp_namespace = "Projectiv.ProjectServices.Grpc";
+
+package ProjectApi;
+
+service ProjectPublic {
+  rpc Get(GetProjectRequest) returns (ProjectResponse);
+  rpc GetList(GetListProjectRequest) returns (PageResultProjectResponse);
+  rpc Create(CreateProjectRequest) returns (ProjectResponse);
+  rpc Update(UpdateProjectRequest) returns (ProjectResponse);
+  rpc Delete(DeleteProjectRequest) returns (EmptyResponse);
+  rpc Like(LikeRequest) returns (LikeResponse);
+}
+
+// requests
+message GetProjectRequest {
+  string id = 1;
+  int32 language = 2;
+}
+
+message GetListProjectRequest {
+  int32 language = 1;
+  string filter = 2;
+  string sorting = 3;
+  int32 skipCount = 4;
+  int32 maxResultCount = 5;
+}
+
+message CreateProjectRequest {
+  int32 language = 1;
+  string userId = 2;
+  string name = 3;
+  string description = 4;
+  string statusId = 5;
+  string domainId = 6;
+  string projectUrl = 7;
+  string gitUrl = 8;
+  string imageId = 9;
+  repeated string documentsId = 10;
+}
+
+message UpdateProjectRequest {
+  int32 language = 1;
+  string id = 2;
+  string userId = 3;
+  string name = 4;
+  string description = 5;
+  string statusId = 6;
+  string domainId = 7;
+  string projectUrl = 8;
+  string gitUrl = 9;
+  string imageId = 10;
+  repeated string documentsId = 11;
+}
+
+message DeleteProjectRequest {
+  string id = 1;
+}
+
+message LikeRequest {
+  string projectId = 1;
+}
+
+//responses
+message EmptyResponse {}
+
+message ProjectResponse {
+  string id = 1;
+  string name = 2;
+  string description = 3;
+  string statusId = 4;
+  string statusName = 5;
+  string domainId = 6;
+  string domainName = 7;
+  string projectUrl = 8;
+  string gitUrl = 9;
+  string imageId = 10;
+  repeated string documentsId = 11;
+  LikeResponse likes = 12;
+}
+
+message PageResultProjectResponse {
+  int32 totalCount = 1;
+  repeated ProjectResponse data = 2;
+}
+
+message LikeResponse {
+  string projectId = 1;
+  int32 likes = 2;
+  bool isLike = 3;
+}

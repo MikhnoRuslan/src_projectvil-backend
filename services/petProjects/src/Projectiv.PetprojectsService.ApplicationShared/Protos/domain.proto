@@ -1,0 +1,16 @@
+syntax = "proto3";
+import "Protos/genericDtoMessage.proto";
+import "Protos/languageMessage.proto";
+
+option csharp_namespace = "Projectiv.DomainServices.Grpc";
+
+package DomainApi;
+
+service DomainPublic {
+  rpc GetList(LanguageApi.LanguageMessage) returns (GenericApi.GenericDtoMessage);
+}
+
+message DomainResponse {
+  string id = 1;
+  string name = 2;
+}

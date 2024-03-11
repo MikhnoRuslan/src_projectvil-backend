@@ -1,0 +1,78 @@
+using System.Net;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Microsoft.EntityFrameworkCore;
+using Projectiv.{ServiceName}Service.DomainShared.Configuration.{ServiceName}Configuration;
+using Projectiv.{ServiceName}Service.EntityFrameworkCore.Context;
+using Projectiv.{ServiceName}Service.Host;
+using Projectvil.Shared.Infrastructures;
+using Projectvil.Shared.Infrastructures.Configurations;
+using Projectvil.Shared.Infrastructures.Constants;
+
+var builder = WebApplication.CreateBuilder(args);
+
+var conf = builder.Configuration.Get<{ServiceName}Configuration>()!;
+builder.Services.AddSingleton(conf);
+
+builder.Services.AddDbContext<{ServiceName}DbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString(conf.ConnectionStrings.{ServiceName})));
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+
+SwaggerConfiguration.ConfigureWithAuth(
+    context: builder,
+    authority: conf.AuthServer.Authority,
+    scopes: new Dictionary<string, string>()
+    {
+        { ProjectivConstants.Api.{ServiceName}Api, ProjectivConstants.Microservice.{ServiceName}Service }
+    },
+    apiTitle: "{ServiceName}Service API");
+
+builder.Services.AddDependencies();
+
+builder.Services.AddProjectivAuthentication(conf.AuthServer.Authority, ProjectivConstants.Api.{ServiceName}Api);
+builder.Services.AddProjectivAuthorization(ProjectivConstants.Api.{ServiceName}Api);
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddGrpc();
+
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.Listen(IPAddress.Any, 5001, listenOptions =>
+    {
+        listenOptions.Protocols = HttpProtocols.Http2;
+    });
+});
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+        c.OAuth2RedirectUrl($"{conf.App.SelfUrl}/swagger/oauth2-redirect.html");
+        c.OAuthClientId("swagger-client-id");
+        c.OAuthClientSecret($"{conf.AuthServer.Secret}");
+        c.OAuthAppName("{ServiceName}Service API");
+    });
+
+    app.UseDeveloperExceptionPage();
+}
+
+app.UseHttpsRedirection();
+
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.UseErrorHandler();
+
+app.UseTransaction<{ServiceName}DbContext>();
+
+app.MapControllers();
+//app.MapGrpcService<{ServiceName}GrpcService>();
+
+app.Run();

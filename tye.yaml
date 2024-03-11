@@ -1,0 +1,42 @@
+name: Projectiv
+services:
+- name: auth-server
+  project: services/auth/src/Projectiv.AuthService.Host/Projectiv.AuthService.Host.csproj
+  bindings:
+    - protocol: https
+      port: 44377
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=e8202f07-66e5-4619-be07-72ba76fde97f
+- name: identity-service
+  project: services/identity/src/Projectiv.IdentityService.Host/Projectiv.IdentityService.Host.csproj
+  bindings:
+    - protocol: https
+      port: 44317
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=e8202f07-66e5-4619-be07-72ba76fde97f
+- name: pet-projects-service
+  project: services/petProjects/src/Projectiv.PetprojectsService.Host/Projectiv.PetprojectsService.Host.csproj
+  bindings:
+    - protocol: https
+      port: 44335
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=e8202f07-66e5-4619-be07-72ba76fde97f
+- name: gateway-service
+  project: gateways/webGateway/src/Projectiv.WebGateway.Host/Projectiv.WebGateway.Host.csproj
+  bindings:
+    - protocol: https
+      port: 44387
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=e8202f07-66e5-4619-be07-72ba76fde97f
+- name: notification-service
+  project: services/notification/src/Projectiv.NotificationService.Host/Projectiv.NotificationService.Host.csproj
+  bindings:
+    - protocol: https
+      port: 44395
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=e8202f07-66e5-4619-be07-72ba76fde97f

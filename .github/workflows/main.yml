@@ -1,0 +1,38 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: SSH into VM and perform actions
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.ALIBABAHOSTNAME }}
+        username: ${{ secrets.ALIBABAUSERNAME }}
+        password: ${{ secrets.ALIBABAUSERPASSWORD }}
+        script: |
+          # Chage directory
+          cd $HOME/Repos/ProjectvilBackend
+
+          # GIT
+          git checkout dev
+          git pull
+          
+          #DOCKER
+          docker ps -a
+          docker stop $(docker ps -a -q)
+          docker container prune --force
+          
+          # UP
+          cd $HOME/Repos
+          docker-compose up --build -d
+          

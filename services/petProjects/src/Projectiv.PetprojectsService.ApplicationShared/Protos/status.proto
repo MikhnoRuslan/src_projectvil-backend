@@ -1,0 +1,16 @@
+syntax = "proto3";
+import "Protos/genericDtoMessage.proto";
+import "Protos/languageMessage.proto";
+
+option csharp_namespace = "Projectiv.StatusServices.Grpc";
+
+package StatusApi;
+
+service StatusPublic {
+  rpc GetList(LanguageApi.LanguageMessage) returns (GenericApi.GenericDtoMessage);
+}
+
+message StatusResponse {
+  string id = 1;
+  string name = 2;
+}

@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>  
+    <ProjectReference Include="..\Projectiv.IdentityService.ApplicationShared\Projectiv.IdentityService.ApplicationShared.csproj" />
+    <ProjectReference Include="..\Projectiv.IdentityService.Domain\Projectiv.IdentityService.Domain.csproj" />
+    <ProjectReference Include="..\Projectiv.IdentityService.EntityFrameworkCore\Projectiv.IdentityService.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Protos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Google.Protobuf" Version="3.24.3" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.57.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.58.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\shared\Projectvil.Shared.Infrastructures\Projectvil.Shared.Infrastructures.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\Projectvil.Shared.Helpers\Projectvil.Shared.Helpers.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\Projectvil.Shared.RabbitMQ\Projectvil.Shared.RabbitMQ.csproj" />
+  </ItemGroup>
+</Project>

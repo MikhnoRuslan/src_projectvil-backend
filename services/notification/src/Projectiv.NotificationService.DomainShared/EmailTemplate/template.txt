@@ -1,0 +1,123 @@
+<html>
+  <body>
+    <div>
+      <div class="x_container" style="font-family:'Segoe UI','-apple-system','BlinkMacSystemFont','Roboto','Arial',sans-serif; color:#212121; font-size:14px; background:#f8f8f8">
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+               <tr>
+                  <td class="x_mobile-hide" style="background-color:white; border-bottom:solid #eaeaea 1px"></td>
+                  <td class="x_content" width="640" style="padding:0px; max-width:640px; background-color:white; border-bottom:solid #eaeaea 1px">
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                           <tr></tr>
+                           <tr>
+                              <td class="x_hero" style="padding:0px 24px">
+                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="x_responsive-table" style="max-width:592px">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td>
+                                                         <table>
+                                                            <tbody>
+                                                               <tr></tr>
+                                                               <tr></tr>
+                                                               <tr></tr>
+                                                               <tr>
+                                                                  <td class="x_message" style="padding:0 0 24px 0">
+                                                                     <p style="font-family:'Segoe UI','-apple-system','BlinkMacSystemFont','Roboto','Arial',sans-serif; padding:0px; margin:0px; font-size:14px; line-height:20px; color:#444444; word-break:break-word"></p>
+                                                                     <p>Добрый день!</p>
+                                                                     <p>{{text}}</p>
+                                                                     <p>С наилучшими пожеланиями.</p>
+                                                                     <p>Projectvil</p>
+                                                                  </td>
+                                                               </tr>
+                                                               <tr></tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td class="x_mobile-hide" style="background-color:white; border-bottom:solid #eaeaea 1px"></td>
+               </tr>
+               <tr>
+                  <td class="x_mobile-hide" style="background:#f8f8f8"></td>
+                  <td class="x_content" width="640" style="padding:0px; max-width:640px; background:#f8f8f8">
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                           <tr>
+                              <td style="padding:24px 24px 8px 24px; max-width:592px">
+                                 <table border="0" width="100%" cellpadding="0" cellspacing="0" class="x_responsive-table" style="vertical-align:middle; background-color:white; box-shadow:0px 4px 8px #eaeaea">
+                                    <tbody>
+                                       <tr>
+                                          <td style="padding:16px 24px 24px 24px">
+                                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td>
+                                                         <div>
+                                                            <img height="100px" alt="AM Suisse" src="data:image/png;base64,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">
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td>
+                                                         <hr>
+                                                         <span class="apple-link" style="color: #9a9ea6; font-size: 11px; text-align: left; padding-bottom: 25px; line-height: 1;">
+                                                         Мы рады получать обратную связь от вас<br>
+                                                         Projectiv<br>
+                                                         Минск, ул. Немига 5<br>
+                                                         T +375 29 321 21 21<br>
+                                                         <a href="mailto:info@projectiv.com" style="color: #9a9ea6; text-decoration: none;">info@projectiv.com</a><br>
+                                                         <a href="http://www.localhost:4200" style="color: #9a9ea6; text-decoration: none;">www.localhost:4200</a>
+                                                         </span>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="padding:24px 24px 8px 24px; max-width:592px">
+                                 <table border="0" width="100%" cellpadding="0" cellspacing="0" class="x_responsive-table" style="vertical-align:middle; background-color:white; box-shadow:0px 4px 8px #eaeaea">
+                                    <tbody></tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="padding:24px 24px 8px 24px; max-width:592px">
+                                 <table border="0" width="100%" cellpadding="0" cellspacing="0" class="x_responsive-table" style="vertical-align:middle; background-color:white; box-shadow:0px 4px 8px #eaeaea">
+                                    <tbody>
+                                       <tr></tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr></tr>
+                        </tbody>
+                     </table>
+                  </td>
+                  <td class="x_mobile-hide" style="background:#f8f8f8"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+    </div>
+  </body>
+</html>

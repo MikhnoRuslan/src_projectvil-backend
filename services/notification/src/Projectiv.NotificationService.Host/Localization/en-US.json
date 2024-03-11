@@ -1,0 +1,8 @@
+{
+  "ConfirmMessage": "We created an account for you, and it is almost ready. We just need you to confirm your mail by activating your account from the link below",
+  "ConfirmEmail": "Email confirmation",
+  "EmptySubject": "Subject can not be null",
+  "CanNotFindTemplate": "Template was not found",
+  "ResetPasswordEmail": "Reset password",
+  "ResetPasswordMessage": "We have created a new password for you. Please follow the link below and use the new password"
+}

@@ -1,0 +1,21 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "App": {
+    "SelfUrl": "https://localhost:{Port}",
+    "CorsOrigins": "https://localhost:44325,https://localhost:44353,https://localhost:44377"
+  },
+  "AuthServer": {
+    "Authority": "https://localhost:44377",
+    "SwaggerClientId": "WebGateway_Swagger",
+    "Secret": "ProjectivSecret",
+    "RedirectUrl": "https://localhost:4200"
+  },
+  "ConnectionStrings": {
+    "{ServiceName}": "Host=localhost;Port=5432;Username=user;Password=password;Database={ServiceName}Service;"
+  }
+}

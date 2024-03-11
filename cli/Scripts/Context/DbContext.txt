@@ -1,0 +1,36 @@
+using Microsoft.EntityFrameworkCore;
+using Projectiv.{ServiceName}Service.DomainShared.Configuration.{ServiceName}Configuration;
+using Projectvil.Shared.EntityFramework.Interfaces;
+
+namespace Projectiv.{ServiceName}Service.EntityFrameworkCore.Context
+{
+    public class {ServiceName}DbContext : DbContext
+    {
+        private readonly IEntityTimestampUpdater _entityTimestampUpdater;
+
+        public {ServiceName}DbContext(DbContextOptions<{ServiceName}DbContext> options,
+            IEntityTimestampUpdater entityTimestampUpdater)
+            : base(options)
+        {
+            _entityTimestampUpdater = entityTimestampUpdater;
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            var settings = {ServiceName}Configuration.BindSettings();
+            optionsBuilder.UseNpgsql(settings.ConnectionStrings.{ServiceName});
+        }
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Please add configuration
+            base.OnModelCreating(modelBuilder);
+        }
+        
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            _entityTimestampUpdater.UpdateTimestamps(ChangeTracker);
+            return base.SaveChangesAsync(cancellationToken);
+        }
+    }
+}

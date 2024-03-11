@@ -1,0 +1,10 @@
+syntax = "proto3";
+import "google/protobuf/any.proto";
+
+option csharp_namespace = "Projectiv.GenericServices.Grpc";
+
+package GenericApi;
+
+message GenericDtoMessage {
+  repeated google.protobuf.Any data = 1;
+}

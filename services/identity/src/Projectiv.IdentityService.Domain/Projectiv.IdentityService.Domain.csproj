@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Projectiv.IdentityService.ApplicationShared\Projectiv.IdentityService.ApplicationShared.csproj" />
+    <ProjectReference Include="..\Projectiv.IdentityService.DomainShared\Projectiv.IdentityService.DomainShared.csproj" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Managers\" />
+    <Folder Include="Handlers\" />
+  </ItemGroup>
+  
+</Project>

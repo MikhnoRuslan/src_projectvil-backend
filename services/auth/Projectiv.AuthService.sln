@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B020F73A-DC1D-46DD-B175-181DA9DA63B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.AuthService.Host", "src\Projectiv.AuthService.Host\Projectiv.AuthService.Host.csproj", "{99DF82CA-0D24-4D9F-8DDD-FDABCC78A49E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7FD45C96-4AAC-4939-A76A-C09BC93AB875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.AuthService.Application.Test", "test\Projectiv.AuthService.Application.Test\Projectiv.AuthService.Application.Test.csproj", "{FD8C6EB4-5D7A-47A7-9CF8-28ADCE977450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.AuthService.BasrTest", "test\Projectiv.AuthService.BasrTest\Projectiv.AuthService.BasrTest.csproj", "{A2698A53-6DEE-47AC-99FC-EA0755D9D9AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.AuthService.Application", "src\Projectiv.AuthService.Application\Projectiv.AuthService.Application.csproj", "{351946FA-4BAC-489B-BE4A-7012EDFB0171}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.AuthService.ApplicationShared", "src\Projectiv.AuthService.ApplicationShared\Projectiv.AuthService.ApplicationShared.csproj", "{D17C540D-FB82-44ED-B09D-5CD050853CB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.AuthService.Domain", "src\Projectiv.AuthService.Domain\Projectiv.AuthService.Domain.csproj", "{86EC7078-6A05-4C16-A4FD-D1B87831A8C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.AuthService.EntityFrameworkCore", "src\Projectiv.AuthService.EntityFrameworkCore\Projectiv.AuthService.EntityFrameworkCore.csproj", "{C4655B61-D346-4EC2-B642-D6F8A0AB15EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.AuthService.DomainShared", "src\Projectiv.AuthService.DomainShared\Projectiv.AuthService.DomainShared.csproj", "{34E52136-FE5B-42C1-A03C-8C8F91929262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99DF82CA-0D24-4D9F-8DDD-FDABCC78A49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DF82CA-0D24-4D9F-8DDD-FDABCC78A49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DF82CA-0D24-4D9F-8DDD-FDABCC78A49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DF82CA-0D24-4D9F-8DDD-FDABCC78A49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8C6EB4-5D7A-47A7-9CF8-28ADCE977450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8C6EB4-5D7A-47A7-9CF8-28ADCE977450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8C6EB4-5D7A-47A7-9CF8-28ADCE977450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8C6EB4-5D7A-47A7-9CF8-28ADCE977450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2698A53-6DEE-47AC-99FC-EA0755D9D9AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2698A53-6DEE-47AC-99FC-EA0755D9D9AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2698A53-6DEE-47AC-99FC-EA0755D9D9AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2698A53-6DEE-47AC-99FC-EA0755D9D9AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351946FA-4BAC-489B-BE4A-7012EDFB0171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351946FA-4BAC-489B-BE4A-7012EDFB0171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351946FA-4BAC-489B-BE4A-7012EDFB0171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351946FA-4BAC-489B-BE4A-7012EDFB0171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17C540D-FB82-44ED-B09D-5CD050853CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17C540D-FB82-44ED-B09D-5CD050853CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17C540D-FB82-44ED-B09D-5CD050853CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17C540D-FB82-44ED-B09D-5CD050853CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EC7078-6A05-4C16-A4FD-D1B87831A8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EC7078-6A05-4C16-A4FD-D1B87831A8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EC7078-6A05-4C16-A4FD-D1B87831A8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EC7078-6A05-4C16-A4FD-D1B87831A8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4655B61-D346-4EC2-B642-D6F8A0AB15EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4655B61-D346-4EC2-B642-D6F8A0AB15EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4655B61-D346-4EC2-B642-D6F8A0AB15EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4655B61-D346-4EC2-B642-D6F8A0AB15EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E52136-FE5B-42C1-A03C-8C8F91929262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E52136-FE5B-42C1-A03C-8C8F91929262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E52136-FE5B-42C1-A03C-8C8F91929262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E52136-FE5B-42C1-A03C-8C8F91929262}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99DF82CA-0D24-4D9F-8DDD-FDABCC78A49E} = {B020F73A-DC1D-46DD-B175-181DA9DA63B6}
+		{FD8C6EB4-5D7A-47A7-9CF8-28ADCE977450} = {7FD45C96-4AAC-4939-A76A-C09BC93AB875}
+		{A2698A53-6DEE-47AC-99FC-EA0755D9D9AC} = {7FD45C96-4AAC-4939-A76A-C09BC93AB875}
+		{351946FA-4BAC-489B-BE4A-7012EDFB0171} = {B020F73A-DC1D-46DD-B175-181DA9DA63B6}
+		{D17C540D-FB82-44ED-B09D-5CD050853CB8} = {B020F73A-DC1D-46DD-B175-181DA9DA63B6}
+		{86EC7078-6A05-4C16-A4FD-D1B87831A8C3} = {B020F73A-DC1D-46DD-B175-181DA9DA63B6}
+		{C4655B61-D346-4EC2-B642-D6F8A0AB15EB} = {B020F73A-DC1D-46DD-B175-181DA9DA63B6}
+		{34E52136-FE5B-42C1-A03C-8C8F91929262} = {B020F73A-DC1D-46DD-B175-181DA9DA63B6}
+	EndGlobalSection
+EndGlobal

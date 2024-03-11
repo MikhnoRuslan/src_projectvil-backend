@@ -1,0 +1,30 @@
+using Microsoft.Extensions.Configuration;
+using Projectiv.{ServiceName}Service.DomainShared.Configuration.PetProjectConfiguration;
+
+namespace Projectiv.{ServiceName}Service.DomainShared.Configuration.{ServiceName}Configuration;
+
+public class {ServiceName}Configuration
+{
+    private const string AppSetting = "appsettings.json";
+    public AppConfiguration App { get; set; }
+    public AuthServerConfiguration AuthServer { get; set; }
+    public {ServiceName}ConnectionStringConfiguration ConnectionStrings { get; set; }
+    
+    public static {ServiceName}Configuration BindSettings()
+    {
+        var currentDir = Directory.GetCurrentDirectory();
+        var baseDirectory = Directory.GetParent(currentDir)!.ToString();
+        var appSettingsPath = Directory.GetFiles(baseDirectory, AppSetting, SearchOption.AllDirectories).FirstOrDefault();
+
+        var configuration = new ConfigurationBuilder()
+            .SetBasePath(Path.GetDirectoryName(appSettingsPath)!)
+            .AddJsonFile(AppSetting)
+            .AddEnvironmentVariables()
+            .Build();
+
+        var {LowerServiceName}Config = new {ServiceName}Configuration();
+        configuration.Bind({LowerServiceName}Config);
+
+        return {LowerServiceName}Config;
+    }
+}

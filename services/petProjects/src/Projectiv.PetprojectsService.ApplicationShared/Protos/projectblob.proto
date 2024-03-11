@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+option csharp_namespace = "Projectiv.ProjectBlobServices.Grpc";
+
+package ProjectBlobApi;
+
+service ProjectBlobPublic {
+  rpc Get(GetBlobRequest) returns (BlobResponse);
+  rpc Create(CreateBlobRequest) returns (BlobIdResponse);
+  rpc Update(UpdateBlobRequest) returns (BlobIdResponse);
+  rpc Delete(GetBlobRequest) returns (EmptyResponse);
+}
+
+//request
+message GetBlobRequest {
+  string id = 1;
+}
+
+message CreateBlobRequest {
+  bytes file = 1;
+  string name = 2;
+  string contentType = 3;
+  string fileName = 4;
+}
+
+message UpdateBlobRequest {
+  string id = 1;
+  bytes file = 2;
+  string name = 3;
+  string contentType = 4;
+  string fileName = 5;
+}
+
+//response
+message BlobResponse {
+  bytes file = 1;
+  string name = 2;
+  string contentType = 3;
+  string fileName = 4;
+}
+
+message BlobIdResponse {
+  string id =1;
+}
+
+message EmptyResponse {}

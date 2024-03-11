@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4" Version="4.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\shared\Projectvil.Shared.Infrastructures\Projectvil.Shared.Infrastructures.csproj" />
+    <ProjectReference Include="..\Projectiv.AuthService.Application\Projectiv.AuthService.Application.csproj" />
+    <ProjectReference Include="..\Projectiv.AuthService.Domain\Projectiv.AuthService.Domain.csproj" />
+    <ProjectReference Include="..\Projectiv.AuthService.EntityFrameworkCore\Projectiv.AuthService.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\identity\src\Projectiv.IdentityService.EntityFrameworkCore\Projectiv.IdentityService.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>

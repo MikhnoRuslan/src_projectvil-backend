@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{38C7D52A-7038-4BF0-83B8-00733AE09E57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.NotificationService.Host", "src\Projectiv.NotificationService.Host\Projectiv.NotificationService.Host.csproj", "{689F2CBB-E20A-458E-8461-E407F73BF78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.NotificationService.Application", "src\Projectiv.NotificationService.Application\Projectiv.NotificationService.Application.csproj", "{AFFE743F-D7EF-49CC-A3B9-7D3A63E8056E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.NotificationService.ApplicationShared", "src\Projectiv.NotificationService.ApplicationShared\Projectiv.NotificationService.ApplicationShared.csproj", "{278BE8A2-2362-4D5E-B379-52332796F16C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.NotificationService.Domain", "src\Projectiv.NotificationService.Domain\Projectiv.NotificationService.Domain.csproj", "{BBC1A865-AF2C-4F08-A7CC-7136A918B850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.NotificationService.DomainShared", "src\Projectiv.NotificationService.DomainShared\Projectiv.NotificationService.DomainShared.csproj", "{683AAA9E-9814-4686-B138-E32177688475}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.NotificationService.EntityFrameworkCore", "src\Projectiv.NotificationService.EntityFrameworkCore\Projectiv.NotificationService.EntityFrameworkCore.csproj", "{5CB7A091-9ED7-4BBE-B529-BE937A77FDF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.NotificationService.Api", "src\Projectiv.NotificationService.Api\Projectiv.NotificationService.Api.csproj", "{29ABD78B-2476-47D1-9225-82C18F6D3245}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EF0630E3-4637-46BB-8C5C-3C4EC8C55055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.NotificationService.Application.Test", "test\Projectiv.NotificationService.Application.Test\Projectiv.NotificationService.Application.Test.csproj", "{34C2E57F-F1CA-470E-AC37-CDBFD1389439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectiv.NotificationService.BasrTest", "test\Projectiv.NotificationService.BasrTest\Projectiv.NotificationService.BasrTest.csproj", "{271A4364-91DD-4D0E-9AD8-6E75B99715F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{689F2CBB-E20A-458E-8461-E407F73BF78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689F2CBB-E20A-458E-8461-E407F73BF78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689F2CBB-E20A-458E-8461-E407F73BF78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689F2CBB-E20A-458E-8461-E407F73BF78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFFE743F-D7EF-49CC-A3B9-7D3A63E8056E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFE743F-D7EF-49CC-A3B9-7D3A63E8056E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFE743F-D7EF-49CC-A3B9-7D3A63E8056E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFE743F-D7EF-49CC-A3B9-7D3A63E8056E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278BE8A2-2362-4D5E-B379-52332796F16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278BE8A2-2362-4D5E-B379-52332796F16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278BE8A2-2362-4D5E-B379-52332796F16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278BE8A2-2362-4D5E-B379-52332796F16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC1A865-AF2C-4F08-A7CC-7136A918B850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC1A865-AF2C-4F08-A7CC-7136A918B850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC1A865-AF2C-4F08-A7CC-7136A918B850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC1A865-AF2C-4F08-A7CC-7136A918B850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683AAA9E-9814-4686-B138-E32177688475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683AAA9E-9814-4686-B138-E32177688475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683AAA9E-9814-4686-B138-E32177688475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683AAA9E-9814-4686-B138-E32177688475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB7A091-9ED7-4BBE-B529-BE937A77FDF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB7A091-9ED7-4BBE-B529-BE937A77FDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB7A091-9ED7-4BBE-B529-BE937A77FDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB7A091-9ED7-4BBE-B529-BE937A77FDF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29ABD78B-2476-47D1-9225-82C18F6D3245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29ABD78B-2476-47D1-9225-82C18F6D3245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29ABD78B-2476-47D1-9225-82C18F6D3245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29ABD78B-2476-47D1-9225-82C18F6D3245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C2E57F-F1CA-470E-AC37-CDBFD1389439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C2E57F-F1CA-470E-AC37-CDBFD1389439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C2E57F-F1CA-470E-AC37-CDBFD1389439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C2E57F-F1CA-470E-AC37-CDBFD1389439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271A4364-91DD-4D0E-9AD8-6E75B99715F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271A4364-91DD-4D0E-9AD8-6E75B99715F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271A4364-91DD-4D0E-9AD8-6E75B99715F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271A4364-91DD-4D0E-9AD8-6E75B99715F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{689F2CBB-E20A-458E-8461-E407F73BF78C} = {38C7D52A-7038-4BF0-83B8-00733AE09E57}
+		{AFFE743F-D7EF-49CC-A3B9-7D3A63E8056E} = {38C7D52A-7038-4BF0-83B8-00733AE09E57}
+		{278BE8A2-2362-4D5E-B379-52332796F16C} = {38C7D52A-7038-4BF0-83B8-00733AE09E57}
+		{BBC1A865-AF2C-4F08-A7CC-7136A918B850} = {38C7D52A-7038-4BF0-83B8-00733AE09E57}
+		{683AAA9E-9814-4686-B138-E32177688475} = {38C7D52A-7038-4BF0-83B8-00733AE09E57}
+		{5CB7A091-9ED7-4BBE-B529-BE937A77FDF1} = {38C7D52A-7038-4BF0-83B8-00733AE09E57}
+		{29ABD78B-2476-47D1-9225-82C18F6D3245} = {38C7D52A-7038-4BF0-83B8-00733AE09E57}
+		{34C2E57F-F1CA-470E-AC37-CDBFD1389439} = {EF0630E3-4637-46BB-8C5C-3C4EC8C55055}
+		{271A4364-91DD-4D0E-9AD8-6E75B99715F5} = {EF0630E3-4637-46BB-8C5C-3C4EC8C55055}
+	EndGlobalSection
+EndGlobal

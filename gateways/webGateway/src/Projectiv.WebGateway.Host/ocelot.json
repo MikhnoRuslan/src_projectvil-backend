@@ -1,0 +1,46 @@
+﻿{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44387"
+  },
+  "Routes": [
+    {
+      "ServiceKey": "Project Service",
+      "DownstreamPathTemplate": "/api/project-service/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44335
+        }
+      ],
+      "UpstreamPathTemplate": "/api/project-service/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "ServiceKey": "Auth Service",
+      "DownstreamPathTemplate": "/api/auth-service/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44377
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth-service/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "ServiceKey": "Identity Service",
+      "DownstreamPathTemplate": "/api/identity-service/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44317
+        }
+      ],
+      "UpstreamPathTemplate": "/api/identity-service/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ]
+}

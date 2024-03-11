@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="main" style="width: 600px; height: 1079px; background-color: #1C1D22; margin: 0 auto;">
+    <div class="hider" style="width: 600px; height: 64px; background-color: #8909C6; box-sizing: border-box;">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a59ceecebfc22269a3c41fa0fe282cf890462bbb76c8bbf3ddd5a36c053cfe1?apiKey=aabeaac4c1e340d98563446824366a14"
+             class="logo"
+             style="margin: 6px 0px 6px 40px; width: 48px; height: 48px; box-sizing: border-box; float: left;"
+             alt="logo">
+        <div class="title" style="padding-top: 11px; color: white; font-size: 38px; font-family: 'SF Pro', sans-serif; margin: 0 0 6px 110px; box-sizing: border-box;">Projectvil</div>
+    </div>
+    <div class="wrapper" style="width: 520px; height: 975px; margin: 0 40px 40px 40px; box-sizing: border-box;">
+        <div>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/71ec7eea006ebeb0465e6922d09bdac8eb4e5a095e17b0d8c0197cf69f60460f?apiKey=aabeaac4c1e340d98563446824366a14"
+                 class="main-image"
+                 style="margin-top: 40px; width: 520px; height: 192px; box-sizing: border-box; border-radius: 32px"
+                 alt="main-image">
+        </div>
+        <div>
+            <div class="greetings" style="color: white; font-size: 24px; font-family: 'SF Pro', sans-serif; box-sizing: border-box; margin-top: 30px; text-align: center;">
+                Welcome to Projectvil, {{name}}!
+            </div>
+            <div class="text" style="margin: 30px 0 30px 0; color: white; font-size: 20px; font-family: 'SF Pro', sans-serif; text-align: center;">{{text}}</div>
+            <div class="wrapper-button" style="width: 520px; height: 168px; background-color: #393A3F; border-radius: 32px; margin-bottom: 40px;">
+                <div class="wrapper-link-title" style="width: 520px; height: 10px; box-sizing: border-box;"></div>
+                <div class="link-title" style="margin: 20px 40px 10px 40px; color: white; font-size: 24px; font-family: 'SF Pro', sans-serif; box-sizing: border-box; text-align: center;">Activate your account</div>
+                <a href="{0}" target="_blank" class="oval-button" style="width: 420px; height: 39px; display: inline-block; margin-left: 50px; border-radius: 24px; background-color: #00d128; color: white; font-size: 24px; font-family: 'SF Pro', sans-serif; text-align: center; text-decoration: none; padding-top: 9px;">Create a project</a>
+            </div>
+        </div>
+        <div class="message" style="position: absolute; bottom: 0; box-sizing: border-box; width: 520px; margin-bottom: 20px;">
+            <div class="static-text" style="color: white; font-size: 21.3px; font-family: 'SF Pro', sans-serif;">
+                By doing this, you will gain access to a multitude of great features such as:
+            </div>
+            <p></p>
+            <div class="static-text" style="color: white; font-size: 20px; font-family: 'SF Pro', sans-serif;">Feature 1</div>
+            <div class="static-text" style="color: white; font-size: 20px; font-family: 'SF Pro', sans-serif;">Feature 2</div>
+            <div class="static-text" style="color: white; font-size: 20px; font-family: 'SF Pro', sans-serif;">Feature 3</div>
+            <p class="static-text" style="color: white; font-size: 20px; font-family: 'SF Pro', sans-serif;">If you have any questions, contact us at info@projectvil.com, and we will be happy to help.</p>
+            <p class="static-text" style="color: white; font-size: 20px; font-family: 'SF Pro', sans-serif;">Thank you, Projectvil Team</p>
+            <p class="footer" style="color: white; font-size: 15px; font-family: 'SF Pro', sans-serif;">Projectvil, 2024</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

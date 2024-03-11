@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Projectiv.NotificationService.ApplicationShared\Projectiv.NotificationService.ApplicationShared.csproj" />
+    <ProjectReference Include="..\Projectiv.NotificationService.DomainShared\Projectiv.NotificationService.DomainShared.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\Projectvil.Shared.RabbitMQ\Projectvil.Shared.RabbitMQ.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\Projectvil.Shared.Helpers\Projectvil.Shared.Helpers.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Managers\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Handlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MassTransit.Abstractions" Version="8.1.3" />
+  </ItemGroup>
+</Project>

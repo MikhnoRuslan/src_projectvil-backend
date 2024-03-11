@@ -1,0 +1,38 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using Projectiv.{ServiceName}Service.DomainShared.Configuration.{ServiceName}Configuration;
+using Projectvil.Shared.EntityFramework.Helpers;
+
+namespace Projectiv.{ServiceName}Service.EntityFrameworkCore.Context;
+
+public class {ServiceName}DbContextFactory : IDesignTimeDbContextFactory<{ServiceName}DbContext>
+{
+	private readonly IHttpContextAccessor _httpContextAccessor;
+	
+	public {ServiceName}DbContextFactory()
+    {
+        
+    }
+    
+    public {ServiceName}DbContextFactory(IHttpContextAccessor httpContextAccessor)
+    {
+        _httpContextAccessor = httpContextAccessor;
+    }
+	
+    public {ServiceName}DbContext CreateDbContext(string[] args)
+    {
+        try
+        {
+            var settings = {ServiceName}Configuration.BindSettings();
+            var optionsBuilder = new DbContextOptionsBuilder<{ServiceName}DbContext>();
+            optionsBuilder.UseNpgsql(settings.ConnectionStrings.{ServiceName});
+
+            return new {ServiceName}DbContext(optionsBuilder.Options, new EntityTimestampUpdater(_httpContextAccessor));
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            throw;
+        }
+    }
+}

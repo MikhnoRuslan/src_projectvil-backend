@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Projectiv.PetprojectsService.Application\Projectiv.PetprojectsService.Application.csproj" />
+    <ProjectReference Include="..\Projectiv.PetprojectsService.Domain\Projectiv.PetprojectsService.Domain.csproj" />
+    <ProjectReference Include="..\Projectiv.PetprojectsService.ApplicationShared\Projectiv.PetprojectsService.ApplicationShared.csproj" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.55.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.24.2" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.55.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.57.0" />
+  </ItemGroup>
+  
+</Project>

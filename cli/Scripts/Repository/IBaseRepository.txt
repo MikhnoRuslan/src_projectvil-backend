@@ -1,0 +1,8 @@
+using Projectvil.Shared.EntityFramework.Interfaces;
+
+namespace Projectiv.{ServiceName}Service.EntityFrameworkCore.Repositories.Interfaces.BaseRepository;
+
+public interface I{ServiceName}BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, IEntity<Guid>
+{
+    
+}

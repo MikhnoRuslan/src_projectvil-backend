@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Projectiv.AuthService.ApplicationShared\Projectiv.AuthService.ApplicationShared.csproj" />
+    <ProjectReference Include="..\Projectiv.AuthService.DomainShared\Projectiv.AuthService.DomainShared.csproj" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Managers\" />
+    <Folder Include="Handlers\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\identity\src\Projectiv.IdentityService.Domain\Projectiv.IdentityService.Domain.csproj" />
+  </ItemGroup>
+</Project>

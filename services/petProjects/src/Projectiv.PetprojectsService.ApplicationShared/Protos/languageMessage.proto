@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "Projectiv.Language.Grpc";
+
+package LanguageApi;
+
+message LanguageMessage {
+  int32 language = 1;
+}

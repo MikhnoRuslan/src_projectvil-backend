@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Projectiv.PetprojectsService.ApplicationShared\Projectiv.PetprojectsService.ApplicationShared.csproj" />
+    <ProjectReference Include="..\Projectiv.PetprojectsService.Domain\Projectiv.PetprojectsService.Domain.csproj" />
+    <ProjectReference Include="..\Projectiv.PetprojectsService.EntityFrameworkCore\Projectiv.PetprojectsService.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\Projectvil.Shared.Infrastructures\Projectvil.Shared.Infrastructures.csproj" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\DataSeeder" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.55.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Google.Protobuf" Version="3.24.2" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.55.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.57.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+  </ItemGroup>
+
+<!--  <ItemGroup>
+    <Protobuf Include="..\Projectiv.PetprojectsService.ApplicationShared\Protos\genericDtoMessage.proto" Link="genericDtoMessage.proto" />
+    <Protobuf Include="..\Projectiv.PetprojectsService.ApplicationShared\Protos\status.proto" Link="status.proto" />
+  </ItemGroup>-->
+  
+</Project>
